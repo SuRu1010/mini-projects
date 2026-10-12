@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Management System - Home</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Main Navigation Bar -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" id="brand-logo-link">
+        <span class="brand-icon">🎓</span>
+        <span>STUDENT MANAGEMENT SYSTEM</span>
+        <span class="brand-badge">Spring Boot</span>
+      </a>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link active" id="nav-home">🏠 Home</a></li>
+          <li><a href="about.html" class="nav-link" id="nav-about">👨‍💻 Project Creator</a></li>
+          <li><a href="product.html" class="nav-link" id="nav-product">📦 Product</a></li>
+          <li><a href="features.html" class="nav-link" id="nav-features">⚡ Features</a></li>
+          <li><a href="contact.html" class="nav-link" id="nav-contact">📬 Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="hero-pill">🚀 Assignment - 1 | Spring Boot Web</div>
+      <h1 class="page-title">
+        <span class="gradient-text">STUDENT MANAGEMENT SYSTEM</span>
+      </h1>
+      <p class="page-subtitle">
+        Welcome to our Student Management System.<br>
+        This project is developed using Spring Boot.
+      </p>
+
+      <!-- Assignment Specified Navigation Menu Pill -->
+      <nav class="nav-bar-pill" aria-label="Assignment Navigation Menu">
+        <a href="index.html" class="active">Home</a>
+        <span class="nav-divider">|</span>
+        <a href="about.html">Project Creator</a>
+        <span class="nav-divider">|</span>
+        <a href="product.html">Product</a>
+        <span class="nav-divider">|</span>
+        <a href="features.html">Features</a>
+        <span class="nav-divider">|</span>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </section>
+
+  <!-- Main Body Content -->
+  <main class="main-content">
+    <div class="container">
+      <div class="grid-2">
+        
+        <!-- Welcome Card -->
+        <article class="card">
+          <div class="card-header">
+            <h2 class="card-title">
+              <span class="card-icon">👋</span>
+              Welcome & Overview
+            </h2>
+            <span class="tag tag-cyan">Spring Web</span>
+          </div>
+          <p style="color: var(--text-muted); margin-bottom: 1.25rem;">
+            Welcome to our <strong>Student Management System</strong>. This web platform is designed to make managing student academic records, profiles, and attendance effortless and intuitive.
+          </p>
+          <div class="info-list">
+            <div class="info-row">
+              <span class="info-label"><span>📌</span> Architecture</span>
+              <span class="info-val">Spring Boot 3 + Spring Web</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label"><span>🌐</span> Technology</span>
+              <span class="info-val">Java & Static HTML/CSS</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label"><span>⚡</span> Server Port</span>
+              <span class="info-val">8080 (Localhost)</span>
+            </div>
+          </div>
+          <div style="margin-top: 1.75rem; display: flex; gap: 0.75rem; flex-wrap: wrap;">
+            <a href="features.html" class="btn btn-primary" id="btn-explore-features">Explore Features →</a>
+            <a href="about.html" class="btn btn-outline" id="btn-view-creator">Project Creator</a>
+          </div>
+        </article>
+
+        <!-- Project Highlights Card -->
+        <article class="card">
+          <div class="card-header">
+            <h2 class="card-title">
+              <span class="card-icon">💡</span>
+              Project Highlights
+            </h2>
+            <span class="tag tag-emerald">5-Page Web</span>
+          </div>
+          <p style="color: var(--text-muted); margin-bottom: 1.25rem;">
+            This project is developed using Spring Boot for Class Work Assignment - 1. It showcases modular multi-page navigation served efficiently via Spring Boot's built-in web container.
+          </p>
+          <div class="info-list">
+            <div class="info-row">
+              <span class="info-label"><span>📂</span> Project Type</span>
+              <span class="info-val">5-Page Static Website</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label"><span>🎯</span> Database / JPA</span>
+              <span class="info-val">Not Required (Pure Web)</span>
+            </div>
+            <div class="info-row">
+              <span class="info-label"><span>✨</span> Thymeleaf</span>
+              <span class="info-val">Not Required (Pure HTML)</span>
+            </div>
+          </div>
+          <div style="margin-top: 1.75rem; display: flex; gap: 0.75rem; flex-wrap: wrap;">
+            <a href="product.html" class="btn btn-outline" id="btn-product-info">Product Info</a>
+            <a href="contact.html" class="btn btn-outline" id="btn-contact-page">Get in Touch</a>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Quick Page Navigation Cards -->
+      <section style="margin-top: 2.5rem;">
+        <h3 style="font-family: var(--font-heading); font-size: 1.25rem; margin-bottom: 1rem; color: #ffffff;">
+          Explore Project Pages
+        </h3>
+        <div class="grid-3">
+          <a href="about.html" class="feature-box" id="card-link-about">
+            <div class="feature-name">👨‍💻 Project Creator</div>
+            <p class="feature-desc">Learn about Suryansh Singh, student details, college, skills, and background.</p>
+          </a>
+          <a href="product.html" class="feature-box" id="card-link-product">
+            <div class="feature-name">📦 Product Details</div>
+            <p class="feature-desc">Understand the product purpose, target users (students, teachers, colleges), and stack.</p>
+          </a>
+          <a href="features.html" class="feature-box" id="card-link-features">
+            <div class="feature-name">⚡ System Features</div>
+            <p class="feature-desc">Browse Add, View, Update, Delete, Search, and Reports modules.</p>
+          </a>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div>
+        <strong>STUDENT MANAGEMENT SYSTEM</strong> — Class Work Assignment - 1
+        <div style="color: var(--text-subtle); font-size: 0.8rem; margin-top: 0.25rem;">
+          Developed using Java & Spring Boot • Running on localhost:8080
+        </div>
+      </div>
+      <ul class="footer-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">Project Creator</a></li>
+        <li><a href="product.html">Product</a></li>
+        <li><a href="features.html">Features</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>

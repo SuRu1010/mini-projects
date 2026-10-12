@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Student Management System</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Main Navigation Bar -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="brand-logo" id="brand-logo-link">
+                <span class="brand-icon">🎓</span>
+                <span>STUDENT MANAGEMENT SYSTEM</span>
+                <span class="brand-badge">Spring Boot</span>
+            </a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link" id="nav-home">🏠 Home</a></li>
+                    <li><a href="about.html" class="nav-link" id="nav-about">👨‍💻 Project Creator</a></li>
+                    <li><a href="product.html" class="nav-link" id="nav-product">📦 Product</a></li>
+                    <li><a href="features.html" class="nav-link" id="nav-features">⚡ Features</a></li>
+                    <li><a href="contact.html" class="nav-link active" id="nav-contact">📬 Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="container">
+            <div class="hero-pill">📬 Get In Touch | Assignment - 1</div>
+            <h1 class="page-title">
+                <span class="gradient-text">CONTACT</span>
+            </h1>
+            <p class="page-subtitle">
+                Reach out to the project creator for queries, demonstrations, or collaboration.
+            </p>
+
+            <!-- Assignment Specified Navigation Menu Pill -->
+            <nav class="nav-bar-pill" aria-label="Assignment Navigation Menu">
+                <a href="index.html">Home</a>
+                <span class="nav-divider">|</span>
+                <a href="about.html">Project Creator</a>
+                <span class="nav-divider">|</span>
+                <a href="product.html">Product</a>
+                <span class="nav-divider">|</span>
+                <a href="features.html">Features</a>
+                <span class="nav-divider">|</span>
+                <a href="contact.html" class="active">Contact</a>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Main Body Content -->
+    <main class="main-content">
+        <div class="container">
+            <div class="grid-2">
+
+                <!-- Contact Information Card -->
+                <article class="card">
+                    <div class="card-header">
+                        <h2 class="card-title">
+                            <span class="card-icon">📇</span>
+                            Contact Details
+                        </h2>
+                        <span class="tag tag-emerald">Active</span>
+                    </div>
+
+                    <div class="info-list">
+                        <div class="info-row">
+                            <span class="info-label"><span>👤</span> Project Creator</span>
+                            <span class="info-val">Suryansh Singh</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label"><span>✉️</span> Email</span>
+                            <span class="info-val">
+                                <a href="mailto:suryansh@example.com"
+                                    style="color: var(--secondary);">suryansh@example.com</a>
+                            </span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label"><span>📞</span> Phone</span>
+                            <span class="info-val">
+                                <a href="tel:8112854233" style="color: #ffffff;">8112854233</a>
+                            </span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label"><span>🏛️</span> College</span>
+                            <span class="info-val">SRMIST</span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label"><span>📍</span> Location</span>
+                            <span class="info-val">Ghaziabad, Uttar Pradesh</span>
+                        </div>
+                    </div>
+
+                    <!-- Quick Connect Details -->
+                    <div
+                        style="margin-top: 1.75rem; background: rgba(6, 182, 212, 0.08); border: 1px solid rgba(6, 182, 212, 0.2); padding: 1.25rem; border-radius: var(--radius-sm);">
+                        <div style="font-weight: 700; color: #ffffff; font-size: 0.95rem; margin-bottom: 0.35rem;">
+                            Academic Department
+                        </div>
+                        <p style="color: var(--text-muted); font-size: 0.88rem; line-height: 1.6;">
+                            Department of Computer Science & Engineering<br>
+                            Campus: Main Block, SRMIST, Ghaziabad, Uttar Pradesh
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Interactive Send Message / Feedback Card -->
+                <article class="card">
+                    <div class="card-header">
+                        <h2 class="card-title">
+                            <span class="card-icon">💬</span>
+                            Send a Message
+                        </h2>
+                        <span class="tag tag-cyan">Feedback</span>
+                    </div>
+
+                    <form id="contact-form"
+                        onsubmit="event.preventDefault(); alert('Thank you! Your message has been sent to Suryansh Singh.');">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Your Name</label>
+                            <input type="text" id="name" class="form-input" placeholder="e.g. Professor Sharma"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">Your Email</label>
+                            <input type="email" id="email" class="form-input" placeholder="e.g. sharma@college.edu"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" id="subject" class="form-input"
+                                placeholder="Inquiry about Student Management System" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" rows="3" class="form-textarea"
+                                placeholder="Write your message or feedback here..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" id="btn-submit-message" style="width: 100%;">
+                            Send Message 🚀
+                        </button>
+                    </form>
+                </article>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div>
+                <strong>STUDENT MANAGEMENT SYSTEM</strong> — Class Work Assignment - 1
+                <div style="color: var(--text-subtle); font-size: 0.8rem; margin-top: 0.25rem;">
+                    Contact: suryansh@example.com • 8112854233 • Ghaziabad, Uttar Pradesh
+                </div>
+            </div>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Project Creator</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>
